@@ -2,7 +2,7 @@
 // 
 // Compiler: Apple clang version 14.0.3 
 //
-// Exercise 1-3
+// Exercise 1-4
 // ------------
 // Write a program to print the corresponding Celcius to Fahrenheit table.
 // (Celcius value range is 0..300 by step size 20)
