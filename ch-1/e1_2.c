@@ -11,8 +11,8 @@
 
 int main(void)
 {
-    // Insert '\c' escape sequence to he argument of the <printf> function
-    printf("\chello, world\n");
+    // Insert '\c' escape sequence to the argument of the <printf> function
+    printf("\c hello, world\n");
 
     return 0;
 }
