@@ -3,12 +3,12 @@
 // Compiler: Apple clang version 14.0.3 
 //
 // Exercise 1-13
-// ------------
+// -------------
 // Write a program to print a histogram of the lengths of words in its input.
 // It is easy to draw the histogram with the bars horizontal; a vertical
 // orientation is more challenging. 
 //
-// Note: Both of horizontal histogram and vertical histograms
+// Note: Both of horizontal histogram and vertical histogram
 // will be implemented.
 
 #include <stdio.h>
@@ -16,10 +16,10 @@
 
 #define WHITESPACE_CHARS " \t\n\r\f\b\v"    // List of whitespace characters
 #define MAX_LENGTH 31   // Expected maximum length of a word is 30
-#define msg_info    ">> Info: EOF signal can be inserted by"\
+#define MSG_INFO    ">> Info: EOF signal can be inserted by"\
                     "using <CRTL+D>\n   in the Unix-like systems.\n\n\n"\
                     ">> Please type a text and send EOF signal to end.\n\n"
-#define msg_warning "\n\n"\
+#define MSG_WARNING "\n\n"\
                     ">> Warning: There is detected a word exceeds maximum\n"\
                     "   length limit <%d>. It will be excluded.\n\n"
 
@@ -32,7 +32,7 @@ int main(void)
     // Assign zero for all elements of <word_histogram>
     memset(word_histogram, 0, sizeof(word_histogram));
     
-    printf(msg_info);
+    printf(MSG_INFO);
 
     while ((ch = getchar()) != EOF)
     {
@@ -43,7 +43,7 @@ int main(void)
             if ((ch_counter > 0) && (ch_counter < MAX_LENGTH))
                 word_histogram[ch_counter]++;
             else
-                printf(msg_warning, MAX_LENGTH-1);
+                printf(MSG_WARNING, MAX_LENGTH-1);
             
             // Reset character counter
             ch_counter = 0;
@@ -68,7 +68,6 @@ int main(void)
             break;
         }
 
-    // #### HISTOGRAMS ####
     // Print horizontal orientation histogram graph
     // y-axis
     printf("\n\n\n                    < Horizontal Orientation Histogram >\n");
@@ -118,9 +117,9 @@ int main(void)
     printf("   %2d  |  ", 0);
     for (i = 1; i <= idx_of_lengthiest_word; i++)
         printf("%2d   ", i);
-    printf("    < Count >");
-    // #### END ####
+    printf("   < Length >");
 
+    // Bye
     printf("\n\n\n>> Bye...\n");
 
     return 0;
