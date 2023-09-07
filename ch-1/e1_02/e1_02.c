@@ -1,4 +1,4 @@
-// Author: Ferhat Yilmaz
+// Author: Ferhat Yilmaz <ferhatyilmaz.me@pm.me>
 // 
 // Compiler: Apple clang version 14.0.3 
 //
