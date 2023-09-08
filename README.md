@@ -14,18 +14,15 @@ It is aimed to this work will help to anyone which embarks on the path of learni
 **Repository Hierarcy**
 
 ```
-
  root_folder:
         chapter_folder:
             exercise_folder:
                 source_code_file(s)
-
 ```
 
 **Source Code File Structure**
 
 ```
-
 // <developer> <email>
 //
 // <used compiler>
@@ -34,10 +31,9 @@ It is aimed to this work will help to anyone which embarks on the path of learni
 // -----------------
 // <exercise question>
 //
-// <notes of the developer> (optional)
+// <developer notes> (optional)
 
 <source code>
-
 ```
 
 Naming convention is critical for understanding code written by someone else. I used and obeyed same rules for each source code. If there is any anomalous instance you can pull a request.
@@ -124,10 +120,10 @@ Like everything else, programming languages evolve over time. So it is important
 
 ### Running an Exercise
 
-Since the C Language is one of native languages, it is needed to compile it before execute. Each exercise folder contains related source codes and header files. There is tons of resource explains how the compiling process. You can documentation of the compiler you used, e.g. `clang` or `gcc`.
+Since the C Language is one of native languages, it is needed to compile it before execute. Each exercise folder contains related source codes and header files. There is tons of resource explains how the compiling process. You can follow documentation of the compiler you used, e.g. `clang` or `gcc`.
 
 ### Contribution
 
 This project is static and limited by the source book. However, if there is a bug or mistake in any exercise, it is welcomed any contribution, i.e. a pull request, an issue or a comment.
 
-Any question or any comment you can use [ferhatyilmaz.me@pm.me](mailto:ferhatyilmaz.me@pm.me)
+For any question or any comment you can use [ferhatyilmaz.me@pm.me](mailto:ferhatyilmaz.me@pm.me)
