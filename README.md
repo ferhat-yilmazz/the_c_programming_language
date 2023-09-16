@@ -32,6 +32,8 @@ It is aimed to this work will help to anyone which embarks on the path of learni
 // <exercise question>
 //
 // <developer notes> (optional)
+// -----------------
+// notes
 
 <source code>
 ```
@@ -82,6 +84,14 @@ while (condition)
 {
     // statements
 }
+```
+
+```
+// Do-while structure
+do
+{
+    // statements
+} while (condition);
 ```
 
 ```
