@@ -2,7 +2,7 @@
  * Written by Ferhat Yilmaz, 2023.
  * <ferhatyilmaz.me@pm.me>
  *
- * Compiler: Apple clang version 14.0.3
+ * Compiler: Apple clang version 15.0.0
  *
  * Exercise 1-24
  * -------------
