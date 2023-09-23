@@ -9,7 +9,9 @@ This repository contains solutions of the exercises in an elegant way. There are
 
 It is aimed to this work will help to anyone which embarks on the path of learning the C programming language. With or without the book, anyone who wants can follow exercises. Solutions as well as related questions combined in the source code for each exercise.
 
-### Stylish of Codes
+### Stylish
+
+Naming convention and coding style is critical for understanding code written by someone else.
 
 **Repository Hierarcy**
 
@@ -23,110 +25,45 @@ It is aimed to this work will help to anyone which embarks on the path of learni
 **Source Code File Structure**
 
 ```
-// <developer> <email>
-//
-// <used compiler>
-//
-// <exercise number>
-// -----------------
-// <exercise question>
-//
-// <developer notes> (optional)
-// -----------------
-// notes
+/* 
+ * <developer info>
+ *
+ * <used compiler>
+ *
+ * <exercise number>
+ * -----------------
+ * <exercise question>
+ *
+ * <developer notes> (optional)
+ * -----------------
+ * notes
+/*
 
 <source code>
 ```
 
-Naming convention is critical for understanding code written by someone else. I used and obeyed same rules for each source code. If there is any anomalous instance you can pull a request.
-
 ```
-// Naming of constants
-
+/* Naming of constants */
 CONSTANT_NAME
 ```
 
 ```
-// Naming of variables
-
+/* Naming of variables */
 variable_name
 ```
 
 ```
-// Naming of functions
-
+/* Naming of functions */
 function_name()
-```
-
-```
-// If-else structure
-// If there is single line statement, than {} braces can be omitted
-
-if (condition)
-{
-    // statemens
-}
-else if (condition)
-{
-    // statements
-}
-else
-{
-    statemens
-}
-```
-
-```
-// While-loop structure
-// If there is single line statement, than {} braces can be omitted
-
-while (condition)
-{
-    // statements
-}
-```
-
-```
-// Do-while structure
-do
-{
-    // statements
-} while (condition);
-```
-
-```
-// For-loop structure
-// If there is single line statement, than {} braces can be omitted
-
-for (statement_1; condition; statement_2)
-{
-    // statements
-}
-```
-
-```
-// Function definition
-
-return_type function_name(parameter_list)
-
-{
-    // function body
-}
-```
-
-```
-// Function call
-
-fucntion_name(argument_list);
 ```
 
 ### Development Environment
 
-Despite of advantages, it is not recommended usage of any IDE when learning a programming language. The way to feel coding and observing behind the scene of compilation process is usign a shell. Only need is a text editor to develop a C program. After development, it can be converted to an executable file by using a C compiler.
+Despite of advantages, it is not recommended usage of any IDE when learning a programming language. The way to feel coding and observing behind the scene of compilation process is usign a shell. Only need is a text editor to develop a C program. After development, it can be converted to an executable file by using a C compiler. However, usage of debugger tools such `gdb` or `lldb` on a shell can take lots of time. For debug purpose, I used CLion IDE.
 
-I developed the solutions by usign `Sublime Text` for the editor, `clang` for the compier and `LLDB` for the debugging tool. It can be used MacOS, Linux-based OS or Windows. I selected MacOS.
+I developed the solutions by usign `Sublime Text` for the editor, `clang` for the compier and `LLDB` on CLion for the debugging tool. It can be used MacOS, Linux-based OS or Windows. I selected MacOS.
 
-Like everything else, programming languages evolve over time. So it is important which standard of the language is used. I developed all solutions under C23 or C17. All of them tested under these conditions. If you notice a bug, you can pull a request or an issue.
+Like everything else, programming languages evolve over time. So it is important which standard of the language is used. I developed all solutions under C17. All of them tested under these conditions. If you notice a bug, you can pull a request or an issue.
 
 ### Running an Exercise
 
