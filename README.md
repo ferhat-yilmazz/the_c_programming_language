@@ -1,8 +1,8 @@
 ## Solutions of The C Programming Language, (K&R), 2nd Edition
 
-### Intoduction
+### Introduction
 
-The C Programming Languge is the most fundamental resource of C programming. The C Language
+The C Programming Language is the most fundamental resource of C programming. The C Language
 is designed as a system programming language and the authors Brian W. Kerninghan & Dennis M. Ritchie explained its core functionalities clearly. The book contains lots of example and exercise. Although there are similar kind of examples for each exercise, sometimes it is hard to figure out the solution.
 
 This repository contains solutions of the exercises in an elegant way. There are lots of repository which contains solution of the K&R book; however, it is observed that many of them were made superficially. For this reason, i take care of source codes are well-commented and solutions are inspirational.
@@ -13,7 +13,7 @@ It is aimed to this work will help to anyone which embarks on the path of learni
 
 Naming convention and coding style is critical for understanding code written by someone else.
 
-**Repository Hierarcy**
+**Repository Hierarchy**
 
 ```
  root_folder:
@@ -59,9 +59,9 @@ function_name()
 
 ### Development Environment
 
-Despite of advantages, it is not recommended usage of any IDE when learning a programming language. The way to feel coding and observing behind the scene of compilation process is usign a shell. Only need is a text editor to develop a C program. After development, it can be converted to an executable file by using a C compiler. However, usage of debugger tools such `gdb` or `lldb` on a shell can take lots of time. For debug purpose, I used CLion IDE.
+Despite of advantages, it is not recommended usage of any IDE when learning a programming language. The way to feel coding and observing behind the scene of compilation process is using a shell. Only need is a text editor to develop a C program. After development, it can be converted to an executable file by using a C compiler. However, usage of debugger tools such `gdb` or `lldb` on a shell can take lots of time. For debug purpose, I used CLion IDE.
 
-I developed the solutions by usign `Sublime Text` for the editor, `clang` for the compier and `LLDB` on CLion for the debugging tool. It can be used MacOS, Linux-based OS or Windows. I selected MacOS.
+I developed the solutions by using `Sublime Text` for the editor, `clang` for the compiler and `LLDB` on CLion for the debugging tool. It can be used MacOS, Linux-based OS or Windows. I selected MacOS.
 
 Like everything else, programming languages evolve over time. So it is important which standard of the language is used. I developed all solutions under C17. All of them tested under these conditions. If you notice a bug, you can pull a request or an issue.
 
