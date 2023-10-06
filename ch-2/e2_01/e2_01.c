@@ -121,7 +121,7 @@ void determine_unsigned_char_limits(void)
     max = previous;
 
     /* Determine minimum limit */
-    current = -1;
+    current = 0;
     previous = 0;
     while((current = current << 1) < previous)
         previous = current;
@@ -175,7 +175,7 @@ void determine_unsigned_short_limits(void)
     max = previous;
 
     /* Determine minimum limit */
-    current = -1;
+    current = 0;
     previous = 0;
     while((current = current << 1) < previous)
         previous = current;
@@ -229,7 +229,7 @@ void determine_unsigned_int_limits(void)
     max = previous;
 
     /* Determine minimum limit */
-    current = -1;
+    current = 0;
     previous = 0;
     while((current = current << 1) < previous)
         previous = current;
@@ -283,7 +283,7 @@ void determine_unsigned_long_limits(void)
     max = previous;
 
     /* Determine minimum limit */
-    current = -1;
+    current = 0;
     previous = 0;
     while((current = current << 1) < previous)
         previous = current;
