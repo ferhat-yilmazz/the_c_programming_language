@@ -32,7 +32,7 @@
 #define BUFFER_WARNING  "\n\n>> WARNING: Buffer capacity is full!"
 #define BUFFER_SIZE 10000
 
-int remove_non_code(const char *text, char *clean_text, int text_length);
+int remove_comment(const char *text, char *clean_text, int text_length);
 
 int check_syntax(const char *text, int text_length);
 
@@ -52,7 +52,7 @@ int main(void) {
     /* Insert NULL character to end of the buffer */
     buffer[length] = '\0';
 
-    clean_code_length = remove_non_code(buffer,
+    clean_code_length = remove_comment(buffer,
                                         clean_code,
                                         length);
     result = check_syntax(clean_code,clean_code_length);
@@ -124,16 +124,16 @@ int check_syntax(const char *text, int text_length) {
 }
 
 /**
- * remove_non_code - Remove comments from the given C script
+ * remove_comment - Remove comments from the given C script
  * @text: Original C script
- * @clear_text: Non-code-free C script
+ * @clear_text: Comment-free C script
  * @text_length: Length of the @text
  *
- * Remove multiline comments, inline comments, double quotes, single quotes.
+ * Remove multi-line comments, inline comments, double quotes, single quotes.
  * Keep newline characters to preserve line count of the original C script.
  * Returns length of the clean_text.
 */
-int remove_non_code(const char *text, char *clean_text, int text_length) {
+int remove_comment(const char *text, char *clean_text, int text_length) {
     bool multiline_comment_active = false, inline_comment_active = false;
     bool double_quote_active = false, single_quote_active = false;
     int i = 0, j = 0;
