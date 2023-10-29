@@ -59,9 +59,9 @@ function_name()
 
 ### Development Environment
 
-Despite of advantages, it is not recommended usage of any IDE when learning a programming language. The way to feel coding and observing behind the scene of compilation process is using a shell. Only need is a text editor to develop a C program. After development, it can be converted to an executable file by using a C compiler. However, usage of debugger tools such `gdb` or `lldb` on a shell can take lots of time. For debug purpose, I used CLion IDE.
+Despite of advantages, it is not recommended usage of any IDE when learning a programming language. The way to feel coding and observing behind the scene of compilation process is using a shell. Only need is a text editor to develop a C program. After development, it can be converted to an executable file by using a C compiler. However, usage of debugger tools such `gdb` or `lldb` on a shell can take lots of time. For debug purpose, I used JetBrains CLion IDE.
 
-I developed the solutions by using `Sublime Text` for the editor, `clang` for the compiler and `LLDB` on CLion for the debugging tool. It can be used MacOS, Linux-based OS or Windows. I selected MacOS and Linux Mint.
+I developed the solutions by using `Sublime Text` for the editor, `gcc`/`clang` for the compiler and `gdb`/`lldb` on CLion for the debugging tool. Each solution contains information exactly which compiler and which version is used. GNU/Linux, MacOS or Windows can be used, is not a matter. I selected Linux Mint, mostly.
 
 Like everything else, programming languages evolve over time. So it is important which standard of the language is used. I developed all solutions under C17. All of them tested under these conditions. If you notice a bug, you can pull a request or an issue.
 
