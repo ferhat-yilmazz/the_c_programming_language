@@ -30,13 +30,14 @@ int main(int argc, char **argv)
     return EXIT_SUCCESS;
 }
 
-/*
+/**
  * htoi - Convert hexadecimal string to integer equivalent
  * @s: Hexadecimal number in string
  *
- * Hexadecimal number should be in format: 0[xX][123456789abcdefABCDEF]
+ * Hexadecimal number in the string @s should be in format:
+ * 0[xX][123456789abcdefABCDEF]
  * If the format of s is not proper, then return -1.
- * This function is valid only ASCII charset.
+ * This function is valid only ASCII char-set.
 */
 int htoi(const char *s)
 {
