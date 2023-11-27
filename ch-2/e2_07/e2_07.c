@@ -10,16 +10,29 @@
 
 #include <stdio.h>
 #include <inttypes.h>
+#include <stdlib.h>
 
 uint64_t invert(uint64_t x, uint8_t p, uint8_t n);
 
 int main(void)
 {
-    uint64_t x = 0xAC; /* 1010 1100 */
-    uint8_t p = 6;
-    uint8_t n = 2;
+    char x_str[32] = {0}, p_str[8] = {0}, n_str[8] = {0};
+    uint64_t x;
+    uint8_t p, n;
 
-    /* Result must be: 1100 1100 */
+    /* User input */
+    printf("Enter x in decimal form (max. 32-digits): ");
+    fgets(x_str, 32, stdin);
+    printf("Enter p in decimal form (max. 8-digits): ");
+    fgets(p_str, 8, stdin);
+    printf("Enter n in decimal form (max. 8-digits): ");
+    fgets(n_str, 8, stdin);
+
+    /* Convert input values to integer */
+    x = strtoll(x_str, NULL, 10);
+    p = strtol(p_str, NULL, 10);
+    n = strtol(n_str, NULL, 10);
+
     printf("%" PRIx64 "\n", invert(x, p ,n));
     return 0;
 }
@@ -32,7 +45,8 @@ int main(void)
  */
 uint64_t invert(uint64_t x, uint8_t p, uint8_t n)
 {
-    if ((p-n+1) < 0) return 0;
+    if ((p < (n-1)) || (p > 63))
+        return 0;
 
     uint64_t mask = ~(~0 << n) << (p-n+1);
     return x ^ mask;
