@@ -50,7 +50,7 @@ uint64_t rightrot(uint64_t x, uint8_t n)
 {
     if (n != n % 64) return 0;
 
-    uint64_t rightmost = x & ~(~0 << n); // << (64 - n)
+    uint64_t rightmost = x & ~(~0 << n);
     uint64_t leftmost = x >> (n + 1);
     uint64_t nth = (x >> n) & 1;
 
